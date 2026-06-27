@@ -1,0 +1,65 @@
+{
+  "name": "sales_management_app",
+  "version": "1.0.0",
+  "description": "A comprehensive sales management application tailored for small pharmaceutical stores in Ghana.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "client": "npm start --prefix src/client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "eslint": "^7.32.0",
+    "jest": "^27.2.5",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/sales_management_app.git"
+  },
+  "keywords": [
+    "sales",
+    "management",
+    "pharmaceutical",
+    "store",
+    "Ghana"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/sales_management_app/issues"
+  },
+  "homepage": "https://github.com/yourusername/sales_management_app#readme",
+  "env": {
+    "MONGODB_URI": "your_mongodb_uri_here",
+    "JWT_SECRET": "your_jwt_secret_here"
+  }
+}
